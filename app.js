@@ -64,6 +64,7 @@ if(fs.existsSync(sourceDir)) {
       // song properties we have a new song
       if(++i % numFields === 0) {
         song.id = uuidV4();
+        song.link = `/songs/${fileName}/${song.id}`;
         playlist.songs.push(song);
         song = {};
       }

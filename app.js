@@ -1,6 +1,7 @@
 'use strict';
 
 const fs = require('fs');
+const uuidV4 = require('uuid/v4');
 
 const baseDir = __dirname;
 const sourceDir = baseDir + '/xml';
@@ -62,6 +63,7 @@ if(fs.existsSync(sourceDir)) {
       // every `numFields` iterations because of the requested
       // song properties we have a new song
       if(++i % numFields === 0) {
+        song.id = uuidV4();
         playlist.songs.push(song);
         song = {};
       }

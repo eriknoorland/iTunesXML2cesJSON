@@ -1,0 +1,22 @@
+{
+  "name": "itunesxml2cesjson",
+  "version": "1.0.0",
+  "description": "Converts an iTunes XML playlist to a custom JSON playlist that can be used for my CES project.",
+  "main": "app.js",
+  "scripts": {
+    "test": " "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eriknoorland/iTunesXML2cesJSON.git"
+  },
+  "author": "Erik Noorland",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eriknoorland/iTunesXML2cesJSON/issues"
+  },
+  "homepage": "https://github.com/eriknoorland/iTunesXML2cesJSON#readme",
+  "dependencies": {
+    "uuid": "^3.0.1"
+  }
+}

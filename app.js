@@ -36,6 +36,7 @@ if(fs.existsSync(sourceDir)) {
     let fileContent = fs.readFileSync(filePath, {encoding: 'utf8'});
 
     let playlist = {
+      id: uuidV4(),
       name: fileName,
       songs: []
     };
